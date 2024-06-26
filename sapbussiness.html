@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Business One</title>
+    <link rel="stylesheet" href="./sapbussiness_style.css" />
+     <!-- Bootstrap Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+</head>
+<body>
+    <div class="container-fluid" id="body_Container">
+
+          <!-- nav start -->
+        <nav id="navbar">
+       <div class="row ">
+        <div class="col-5 d-flex justify-content-start">
+          <img src="./assets/Logo/cyber caves_logo.jpg" alt="" height="65px" width="190px" class="img-fluid ms-3">
+          
+             </div>
+            <div class="col-7">
+                 
+        <ul class="list-inline fw-bold" id="nav_ul">
+         <li class="list-inline-item text-dark"><a href="index.html">Home</a></li>
+
+          <li class="list-inline-item text-dark">    
+
+
+            <div class="dropdown">
+  <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+    Products
+  </a>
+
+  <ul class="dropdown-menu bg-info">
+    <li><a class="dropdown-item" href="sapbussiness.html">SAP Business One</a></li>
+    <li><a class="dropdown-item" href="#">S/4 HANA</a></li>
+    <li><a class="dropdown-item" href="#">SAP Customer Checkout (CCO)</a></li>
+  </ul>
+</div>
+
+
+
+
+
+          </li>
+          <li class="list-inline-item text-dark">
+              
+              
+            <div class="dropdown">
+  <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+  Services
+  </a>
+
+  <ul class="dropdown-menu bg-info">
+    <li><a class="dropdown-item" href="">SAP Implementation</a></li>
+    <li><a class="dropdown-item" href="">SAP Upgrade</a></li>
+    <li><a class="dropdown-item" href="">SAP Migration</a></li>
+     <li><a class="dropdown-item" href="">SAP Support Services</a></li>
+    <li><a class="dropdown-item" href="">SAP Customized Addon Development</a></li>
+    <li><a class="dropdown-item" href="">Networking & IT Services</a></li>
+  </ul>
+</div>
+            </li>
+          <li class="list-inline-item text-dark">Industries</li>
+          <li class="list-inline-item text-dark">About Company</li>
+          <li class="list-inline-item text-dark">Contact</li>
+        </ul>
+
+             </div>
+             
+          </div>
+       </nav>
+      
+      <!-- nav end -->
+      
+        <!-- <h1 class="ms-2 my-3 border-bottom border-dark border-2 text-center w-25">SAP Business One</h1> -->
+
+         <!-- sap_img start -->
+        <div id="sap_img" >
+            <div class="d-flex justify-content-center flex-column align-items-center ">
+                <h1 class="mb-3 fw-bold">SAP Business One</h1>
+            <p class="mb-4">Discover a single, affordable solution for managing your entire company</p>
+            <div class="d-flex justify-content-evenly w-75">
+            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#requestDemoModal">Request a demo</button>
+            <button class="btn btn-primary"><a href="https://youtu.be/CHe6LLvkDnY?si=zcUE33Cp3PPhtuy0" target="_blank" class="text-light text-decoration-none"> Watch the video</a></button>
+            </div>
+            </div>
+        </div>
+         <!-- sap_img end -->
+
+         <!-- Request a demo start -->
+    <div class="modal fade" id="requestDemoModal" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content px-3 py-3">
+                <div class="modal-header  bg-dark">
+                    <h3 class="modal-title text-light fw-bold w-100 text-center" id="requestDemoModalLabel">Schedule a meeting with us for a free demo.</h3>
+                    <button type="button" class="btn-close bg-light ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-bold">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="businessEmail" class="form-label fw-bold">Business Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="businessEmail" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="contactNumber" class="form-label fw-bold">Contact Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="contactNumber" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="companyName" class="form-label fw-bold" >Company Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="companyName" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="product" class="form-label fw-bold">Choose the product <span class="text-danger">*</span></label>
+                                <select id="product" class="form-select" required>
+                                    <option value="">Choose Product</option>
+                                    <option value="Product1">Product 1</option>
+                                    <option value="Product2">Product 2</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="country" class="form-label fw-bold">Choose Country <span class="text-danger">*</span></label>
+                                <select id="country" class="form-select" required>
+                                    <option value="India">India</option>
+                                    <option value="UAE">United Arab Emirates</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="United States">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="industry" class="form-label fw-bold">Industry <span class="text-danger">*</span></label>
+                                <select id="industry" class="form-select" required>
+                                    <option value="">Choose Industry</option>
+                                    <option value="Industry1">Industry 1</option>
+                                    <option value="Industry2">Industry 2</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="message" class="form-label fw-bold">Message <span class="text-danger">*</span></label>
+                                <textarea id="message" class="form-control" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                            <label class="form-check-label" for="privacyPolicy">
+                                I have read your Privacy Policy and I agree.  <span class="text-danger">*</span>
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="submit" class="btn btn-warning px-4 me-3">Submit</button>
+                          <button type="reset" class="btn btn-warning px-4 ms-3">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- Request a demo end -->
+
+         <div class="d-flex  flex-column align-items-center mt-4">
+             <h1 >What is SAP Business One?</h1>
+         <p class="w-50 text-center">A single, affordable solution to manage your entire small business
+            from accounting and financials, purchasing, inventory, sales and customer relationships to reporting and analytics.</p>
+         </div>
+         <!-- what is sap start -->
+          <div  class="d-flex align-items-center" id="wss">
+            <div >
+                    <img src="./assets/Product/SAP Features 1.png" alt="" class="w-75">
+            </div>
+            <div class="w-100">
+                <p class="mb-3">Gain greater control over your business or subsidiary with SAP Business One. Streamline key processes, 
+                    gain greater insight into your business, and make decisions based on real-time information so you can drive profitable growth.</p>
+                <ul class="mb-5">
+                    <li>On-premise or cloud deployment</li>
+                    <li>Integrated business intelligence</li>
+                    <li>Integration with the SAP HANA platform</li>
+                    <li>Quick deployment</li>
+                </ul>
+                <div  class="d-flex justify-content-evenly w-75">
+            <button class="btn btn-dark"> <a href="./docs/SAP-Business-One-designed-for-all-your-small-and-midsize-companys-needs.pdf" target="_blank" class="text-light text-decoration-none">Read the Solution Overview</a></button>
+            <button class="btn btn-primary"><a href="https://youtu.be/As4uDKSFw_I?si=bnydXB3Gxxn68qxy" target="_blank" class="text-light text-decoration-none"> Watch the video</a></button>
+            </div>
+            </div>
+          </div>
+
+         <!-- what is sap end -->
+
+        <!-- 4 cards start -->
+         <div id="cards4" class="d-flex justify-content-center flex-column">
+
+            <div id="top" class="d-flex flex-column align-items-center mt-4" style="color: #1A2130;">
+            <h1 class="fw-bold">And now there is a SAP Business One </h1>
+            <h1 class="fw-bold">your business today and tommorow and the future.</h1>
+            </div>
+
+         <div id="bottom" class="d-flex justify-content-evenly mt-4 mb-5">
+
+            <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SAP 1.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold ">Cloud</h5>
+            <p class="card-text">You can now deploy SAP Business One Cloud for a monthly licence grows your SAP Business One solution grows with you.</p>
+
+                   <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#card_1" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                    <img src="./assets/Product/SAP 2.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Mobile</h5>
+                    <p class="card-text">Manage your business on the move and mobilise your sales team with SAP Business One mobile apps, so you are in control, available anytime, anywhere and on my mobile device.</p>
+
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                </div>
+                </div>
+
+                <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SAP 3.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold">On Premise</h5>
+            <p class="card-text">If you want to deploy your SAP Business One solution in the office (on premise)- that's just fine too, we have a deployment solution to suit all our customers needs.</p>
+            
+                <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#card_3" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                </p>
+
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SAP 4.png" class="card-img-top img-fluid w-50 pt-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold" style="margin-top: -10px;">SAP Business One Web Client                                                                             </h5>
+                    <p class="card-text"> SAP Business One, Web client brings                                                       
+                                   you the best of all worlds. Based on SAP 
+                                   Fiori design principles, it encapsulates the 
+                                   core processes and business logic of the 
+                                   SAP Business One solution.
+                        </p>
+                        
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#card_4" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                  </div>
+                </div>
+
+         </div>
+
+         </div>
+
+        <!-- 4 cards end -->
+
+
+<!-- 4 cards More details.... start -->
+ <div class="container-fluid">
+
+   <div class="collapse my-5" id="card_2">
+  <div class="card card-body">
+    <h1 class="text-center">SAP Business One Sales App</h1>
+    <div class="d-flex justify-content-around align-items-center collpasebody">
+
+        <p class="w-50">Empower your entire sales organization to manage 
+information on the move anytime, anywhere, 
+and on any mobile device.
+</p>       
+           
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/W2IFE3k_Ojg?si=EcD-BYW8dJNjWbiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        
+    </div>
+
+    <h1 class="text-center">SAP Business One Service App</h1>
+    <div class="d-flex justify-content-around align-items-center" id="collpasebody2" >        
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/W-JTrexTuCo?si=vWFnyXSN0h9FPmdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        <p class="w-50 ">SAP Business One Service mobile app for iOS and Android 
+helps your service team manage their workload anywhere. 
+With the app, they can view customer service records, 
+ticket information, check stock, place an order and capture 
+a customer signature, for more effective customer service 
+management on the move.
+</p>
+             
+    </div>
+</div>
+</div>
+
+ 
+<div class="collapse my-5" id="card_4">
+  <div class="card card-body">
+    <h1 class="text-center">SAP Business One Web Client</h1>
+    <div class="d-flex justify-content-around align-items-center collpasebody" >
+      
+        <p class="w-50">Create, process, and update marketing documents and master data,                  
+including approval processes. With SAP Business One, Web client. 
+you can create and track activities and benefit from sophisticated 
+analytical charting capabilities and predefined analytics content. 
+In addition, the client can be deployed either in the cloud or 
+on-premise, including side-by-side use.
+</p>   
+           
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/oJtiUHjbA1E?si=eb2dQl2_5nKqNgDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+        
+    </div>
+</div>
+</div>
+
+
+ </div>
+<!-- 4 cards More details.... end -->
+
+       <!-- 8 cards start -->
+         <div id="cards4" class="d-flex justify-content-center flex-column">
+
+            <div id="top" class="d-flex flex-column align-items-center mt-4" style="color: #1A2130;">
+            <h1 class="fw-bold">SAP Business One Key Features</h1>
+            <h1 class="fw-bold">Everything you need for your SME</h1>
+            </div>
+
+         <div id="bottom" class="d-flex justify-content-evenly mt-4 mb-5">
+
+            <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 1.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold ">End-to-End Automation</h5>
+            <p class="card-text">Automate your business processes and gain complete control of your business.</p>
+
+                   <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_1" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                    <img src="./assets/Product/SME 2.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Accurate Real-time Reporting & Analytics</h5>
+                    <p class="card-text">Run your business optimally with SAP Business One accurate reports and dashboards</p>
+
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_2" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                </div>
+                </div>
+
+                <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 3.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold">Complete Operational Visibility & Control</h5>
+            <p class="card-text">Improve business visibility and performance with SAP Business One powerful data analytics.</p>
+            
+                <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_3" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                </p>
+
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 4.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Customized Features</h5>
+                    <p class="card-text"> Meet industry-specific requirements with customized features.</p>
+                        
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_4" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                  </div>
+                </div>
+
+         </div>
+
+         <!-- bottom2 -->
+         <div id="bottom" class="d-flex justify-content-evenly mt-4 mb-5">
+
+            <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 5.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold ">Financial management</h5>
+            <p class="card-text">Improve margins, reduce errors, and drive more profitable decision-making with a complete set of tools for streamlined financial operations.</p>
+
+                   <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_5" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                    <img src="./assets/Product/SME 6.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Purchasing and Inventory Control</h5>
+                    <p class="card-text">Optimize purchasing practices and control costs by managing the complete order-to-pay cycle including receipts, invoices, returns, and payments.</p>
+
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_6" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                </div>
+                </div>
+
+                <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 7.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-center fw-bold">Sales and Customer Management</h5>
+            <p class="card-text">Oversee the entire sales process and customer lifecycle more efficiently from initial contact to final sale, after-sales service, and support.</p>
+            
+                <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_7" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                </p>
+
+            </div>
+            </div>
+
+                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <img src="./assets/Product/SME 8.png" class="card-img-top img-fluid w-50 pt-3" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Access Data Anytime, Anywhere</h5>
+                    <p class="card-text">Get access to the most relevant data and grow your business anytime, from anywhere.</p>
+                        
+                    <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary btn-sm px-3 toggle-button" data-bs-toggle="collapse" href="#tiles_8" role="button" aria-expanded="false" aria-controls="collapseExample">More</a>
+                    </p>
+
+                  </div>
+                </div>
+
+         </div>
+
+         </div>
+
+        <!-- 8 cards end -->
+
+
+<!-- 8 cards More details.... start -->
+ <div class="container-fluid">
+
+   <div class="collapse my-5" id="tiles_1">
+  <div class="card card-body">
+    <h1 class="text-center">End-to-End Automation</h1>
+     <div class="px-5">
+      <h5 class="fw-bold"></h5>
+      <p></p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_2">
+  <div class="card card-body">
+    <h1 class="text-center">Accurate Real-time Reporting & Analytics</h1>
+     <div class="px-5">
+      <h5 class="fw-bold">Dashboards and reports</h5>
+      <p>Design intuitive, interactive dashboards and reports that answer your most pressing questions. Managers can also track revenues, costs, and cash flow accurately; assess performance; and take swift corrective action.</p>
+      <h5 class="fw-bold">Real-time analytics</h5>
+      <p>Access information faster and evaluate it with powerful analytics in real-time. With SAP Business One you can simplify data searching and the on-demand creation of standard or ad hoc reports. </p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_3">
+  <div class="card card-body">
+    <h1 class="text-center">Complete Operational Visibility & Control</h1>
+     <div class="px-5">
+      <h5 class="fw-bold"></h5>
+      <p></p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_4">
+  <div class="card card-body">
+    <h1 class="text-center">Customized Features</h1>
+     <div class="px-5">
+      <h5 class="fw-bold"></h5>
+      <p></p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_5">
+  <div class="card card-body">
+    <h1 class="text-center">Financial management</h1>
+    <div class="px-5">
+      <h5 class="fw-bold">Accounting</h5>
+      <p>Automate the handling of all key accounting processes such as journal entries, accounts receivable and accounts payable.</p>
+      <h5 class="fw-bold">Controlling</h5>
+      <p>Manage cash flow, track fixed assets, control budgets, and monitor project costs with greater accuracy and efficiency.</p>
+      <h5 class="fw-bold">Fixed asset management</h5>
+      <p>Simplify the management of your fixed assets with a virtual function, eliminating the need for repetitive manual data entry.</p>
+      <h5 class="fw-bold">Banking and reconciliation</h5>
+      <p>Process reconciliations, bank statements, and payments faster through various methods including checks, cash, and bank transfers.</p>
+      <h5 class="fw-bold">Financial reporting and analysis</h5>
+      <p>Create standard or customized reports from real-time data to improve your business planning and audit review processes.</p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_6">
+  <div class="card card-body">
+    <h1 class="text-center">Purchasing and Inventory Control</h1>
+    <div class="px-5">
+      <h5 class="fw-bold">Procurement</h5>
+      <p>Streamline procurement processes such as requisition requests, purchase order and good receipts creation, and returns management. Improve audits by matching documents, viewing information trails, and handling multiple currencies.</p>
+    <h5 class="fw-bold">Master data management</h5>
+    <p>Centralize purchasing processes by managing detailed data in a user-friendly interface. View account balance and purchase analyses while maintaining detailed item purchasing information with price lists and tax information. </p>
+    <h5 class="fw-bold">Warehouse and accounting integration</h5>
+    <p>Benefit from real-time synchronization of goods receipts and inventory levels in the warehouse to perform purchase planning with ease and create an accounts payable invoice automatically from a purchase order or goods receipt.</p>
+  <h5 class="fw-bold">Accounts payable</h5>
+  <p>Lower costs and optimize your supply-chain relationships. Process accounts payable invoices, cancellations, and credit memos with a purchase order reference; plan material needs; and schedule purchases accordingly.</p>
+  <h5 class="fw-bold">Reporting</h5>
+  <p>Generate integrated reports with real-time data and display them in various report formats or dashboards to gain an overview of what matters most to your business, whether you’re using your desktop or your mobile device.</p>
+  </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_7">
+  <div class="card card-body">
+    <h1 class="text-center">Sales and Customer Management</h1>
+     <div class="px-5">
+      <h5 class="fw-bold">Sales and opportunity management</h5>
+      <p>Track all sales opportunities and lead activities throughout the sales cycle, from the first contact to deal closing.</p>
+      <h5 class="fw-bold">Marketing campaign management</h5>
+      <p>Create, manage, and analyze marketing activities to turn prospects into customers and grow sales and profitability.</p>
+      <h5 class="fw-bold">Customer management</h5>
+      <p>Store all critical customer data in one place by synchronizing and managing customer contacts stored in Microsoft Outlook.</p>
+      <h5 class="fw-bold">Service management</h5>
+      <p>Craft and manage warranty contracts and service agreements efficiently, and enter and respond to service calls quickly. </p>
+      <h5 class="fw-bold">Reporting and analysis</h5>
+      <p>Design detailed reports on all aspects of the sales process from forecasting to pipeline tracking by using templates.</p>
+      <h5 class="fw-bold">Mobile sales</h5>
+      <p>Empower your entire sales organization to manage information on the move anytime, anywhere, and on any mobile device.</p>
+    </div>
+</div>
+</div>
+
+<div class="collapse my-5" id="tiles_8">
+  <div class="card card-body">
+    <h1 class="text-center">Access Data Anytime, Anywhere</h1>
+     <div class="px-5">
+      <h5 class="fw-bold"></h5>
+      <p></p>
+    </div>
+</div>
+</div>
+
+
+
+ </div>
+<!-- 8 cards More details.... end -->
+
+<!-- FAQ start-->
+ <div class="d-flex justify-content-center align-items-center">
+ <div id="FAQ" class="w-75 ">
+    <h1 class="py-3 text-center">Frequently asked questions about SAP Business One</h1>
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What is SAP Business One used for?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SAP Business One is an affordable solution to manage small and midsize companies: from accounting and financials, purchasing, inventory, sales and customer relationships (CRM) to reporting and analytics.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        What is the difference between SAP ERP and SAP Business One?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SAP Business One is designed for small and midsize business (SMB) enterprises, while SAP S/4HANA Cloud and SAP ERP are designed for organizations of all sizes.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Is SAP Business One customizable?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Because every business is different, SAP Business One is designed with flexibility in mind. Whether it’s deployed on-premise or in the cloud, you can access SAP Business One at anytime, anywhere using any mobile device. As your business grows, you can customize and extend SAP Business One to meet your evolving needs.</div>
+    </div>
+  </div>
+</div>
+ </div>
+</div>
+
+<!-- FAQ end-->
+
+
+    </div>
+    <!-- Javascript -->
+     <script>
+    // Function to toggle the button text
+    function toggleText(button) {
+        if (button.innerText === "More") {
+            button.innerText = "Less";
+        } else {
+            button.innerText = "More";
+        }
+    }
+
+    // Add event listeners to all buttons with the class 'toggle-button'
+    document.addEventListener("DOMContentLoaded", function() {
+        const buttons = document.querySelectorAll(".toggle-button");
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                toggleText(button);
+            });
+        });
+    });
+
+</script>
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+</body>
+</html>
