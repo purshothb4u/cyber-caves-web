@@ -17,11 +17,21 @@
             font-family: Arial, sans-serif;
             }
 
+          .nav-link {
+              color: black;
+              transition: color 0.3s ease;
+          }
+
+          .nav-link:hover {
+              color: gray; 
+          }
+
         #top_banner{
             height: 50vh;
             background-image: url(./assets/services/SAP_Implementation/SAPB1_implementation_Banner.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            
         }
 
         section{
@@ -77,6 +87,20 @@
             .cta-banner p {
             margin-bottom: 20px;
             }
+
+            /* Mobile devices (up to 767px) */
+            @media (max-width: 767px){
+
+               #top_banner{
+                display: none;
+               }
+
+              #section3 .d-flex {
+              flex-direction: column;
+              align-items: center;
+              }
+
+            }
             
 
     </style>
@@ -84,6 +108,78 @@
 <body>
 
     <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div >
+              <a class="navbar-brand " href="#"><img src="./assets/Logo/cybercaves_logo.jpg" alt="" width="180rem"></a>   
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end me-4" id="navbarNavDropdown">
+            <ul class="navbar-nav  d-flex gap-4">
+
+              <li class="nav-item fw-bold">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="sapbussiness.html">SAP Business One</a></li>
+                  <li><a class="dropdown-item" href="#">S/4 HANA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Customer Checkout (CCO)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Services
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="sapImplement.html">SAP Implementation</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Upgrade</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Migration</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Support Services</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Customized Addon Development</a></li>
+                  <li><a class="dropdown-item" href="#">Networking & IT Services</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Industries
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="">t1</a></li>
+                  <li><a class="dropdown-item" href="#">t2</a></li>
+                  <li><a class="dropdown-item" href="#">t3</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Company
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="">t1</a></li>
+                  <li><a class="dropdown-item" href="#">t2</a></li>
+                  <li><a class="dropdown-item" href="#">t3</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item fw-bold">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
       
         <!-- top banner image -->
         <header id="top_banner"> 
@@ -92,8 +188,8 @@
 
         <!-- Main body -->
         <main>
-            <section id="section1" class="mx-5">
-                <h3 class="fw-bold">Embrace digital transformation. Implement SAP</h3>
+            <section id="section1" class="mx-0 mx-md-5">
+                <h3 class="fw-bold text-center text-md-start">Embrace digital transformation. Implement SAP</h3>
 
                 <p>Intelligent Enterprise strategies can go a long way in helping organizations harness the power of automation, drive innovation, and propel growth. Our expert SAP implementation services help you do just that.</p>
                 <p>Following effective SAP implementation guidelines, we help you plan and streamline your business operations with ease. Through the implementation, you also enjoy end-to-end support from our team who will guide you across the phases of implementation, and help you make the most of the features, inbuilt and add-on.</p>
@@ -102,13 +198,13 @@
         <!-- 5 Tiles -->
          <section id="section2" class="d-flex justify-content-center flex-column" style="background-color: #AAD7D9;">
 
-            <div id="top" class="d-flex flex-column align-items-center mt-4" style="color: #1A2130;">
+            <div id="top" class="d-flex flex-column align-items-center mt-4 mx-1 mx-md-5 text-center text-md-start" style="color: #1A2130;">
              <h3 class="fw-bold">Our Implementation process is broken down into five phases to ensure the easy set-up of SAP. This includes:</h3>
             </div>
 
-         <div id="bottom" class="d-flex justify-content-evenly mt-4 mb-5">
+         <div id="bottom" class="d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-evenly mt-4 mb-5">
 
-            <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+            <div class="card d-flex flex-column align-items-center m-2" style="width: 18rem;">
             <img src="./assets/services/SAP_Implementation/Project_Preparation.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
             <div class="card-body">
             <h5 class="card-title text-center fw-bold ">Project Preparation</h5>
@@ -116,7 +212,7 @@
             </div>
             </div>
 
-                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                 <div class="card d-flex flex-column align-items-center m-2" style="width: 18rem;">
                     <img src="./assets/services/SAP_Implementation/Business_Blueprint.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center fw-bold ">Business Blueprint</h5>
@@ -124,7 +220,7 @@
                 </div>
                 </div>
 
-                <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                <div class="card d-flex flex-column align-items-center m-2" style="width: 18rem;">
             <img src="./assets/services/SAP_Implementation/Project_Realization.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
             <div class="card-body">
             <h5 class="card-title text-center fw-bold">Project Realization</h5>
@@ -133,7 +229,7 @@
             </div>
             </div>
 
-                 <div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                 <div class="card d-flex flex-column align-items-center m-2" style="width: 18rem;">
             <img src="./assets/services/SAP_Implementation/Final_Preparation.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center fw-bold" >Final Preparation</h5>                                                                      </h5>
@@ -141,7 +237,7 @@
                   </div>
                 </div>
 
-                   <div class="card d-flex flex-column align-items-center " style="width: 18rem;">
+                   <div class="card d-flex flex-column align-items-center m-2" style="width: 18rem;">
             <img src="./assets/services/SAP_Implementation/Go-live_Support.png" class="card-img-top img-fluid w-50 pt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center fw-bold">Go-live and Support</h5>                                                                          </h5>
@@ -153,8 +249,8 @@
 
          </section>
 
-            <section class="mx-5" id="section3">
-                <h2 class="text-center fw-bold">Cyber Caves Implements Various SAP Business One solutions</h2>
+            <section  class="mx-0 mx-md-5" id="section3">
+                <h2 class="text-center text-md-start fw-bold">Cyber Caves Implements Various SAP Business One solutions</h2>
                <div class="d-flex justify-content-evenly mx-5 mt-4 " id="dots">
                       <div >
                     <ul>
