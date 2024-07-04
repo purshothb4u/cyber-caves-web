@@ -88,12 +88,24 @@
             margin-bottom: 20px;
             }
 
+            /* Tab devices (up to 991px) */
+            @media (max-width: 991px){
+                #top_banner{
+                height: 25vh;
+               }
+
+            }
+
             /* Mobile devices (up to 767px) */
             @media (max-width: 767px){
 
                #top_banner{
-                display: none;
+                  height: 15vh;
                }
+
+              section{
+              margin-top: 26px;
+              }
 
               #section3 .d-flex {
               flex-direction: column;
@@ -207,7 +219,7 @@
                                   Feel free to get in touch with us</p>
                     <form>
                         <div class="row mb-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-md-0 mb-3">
                                 <label for="name" class="form-label fw-bold">Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="name" required>
                             </div>
@@ -217,7 +229,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-md-0 mb-3">
                                 <label for="contactNumber" class="form-label fw-bold">Phone <span class="text-danger">*</span></label>
                                 <input type="tel" class="form-control" id="contactNumber" required>
                             </div>
@@ -227,7 +239,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-md-0 mb-3">
                                 <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
                                 <select id="product" class="form-select" required>
                                     <option value="">Choose Product</option>
@@ -242,7 +254,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-md-12">
+                            <div class="col-md-12 mb-md-0 mb-3">
                               <label for="subject" class="form-label fw-bold">Subject <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="subject" required>
                             </div>
@@ -341,7 +353,7 @@
 
             <section  class="mx-0 mx-md-5" id="section3">
                 <h2 class="text-center fw-bold">Cyber Caves Implements Various SAP Business One solutions</h2>
-               <div class="d-flex justify-content-evenly mx-5 mt-4 " id="dots">
+               <div class="d-flex justify-content-evenly mt-4 " id="dots">
                       <div >
                     <ul>
                         <li>
@@ -384,9 +396,7 @@
               Get the right solution for your business from our industry
               experts!
             </p>
-            <a href="contact.html" class="btn btn-warning"
-              >Talk to Our Experts</a
-            >
+            <a  class="btn btn-warning" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Talk to Our Experts</a>
           </div>
          </footer>
 

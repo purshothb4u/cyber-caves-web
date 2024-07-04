@@ -3,16 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP Integration with third party applications</title>
+    <title>SAP B1 Integration with third party applications</title>
+    <link rel="icon" href="./assets/Logo/cyber caves_title.jpg" />
     <!-- Bootstrap Link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            }
+
+          .nav-link {
+              color: black;
+              transition: color 0.3s ease;
+          }
+
+          .nav-link:hover {
+              color: gray; 
+          }
+
+        #top_banner{
+            height: 50vh;
+            background-image: url(./assets/services/Addon_Development/Addon_Development.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+
+        section{
+            margin-top: 36px;
+        }
+
+        #dots ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        #dots li {
+            position: relative;
+            padding-left: 20px; /* Adjusted padding to accommodate larger bullet points */
+            margin-bottom: 15px;
+            
+        }
+
+        #dots li::before {
+            content: '\2023'; /* Custom bullet point symbol */
+            color: #007bff; /* Custom color for bullet points */
+            position: absolute;
+            left: 0;
+            font-size: 24px; /* Increased size for bullet points */
+            line-height: 1; /* Ensures bullet point aligns with text */
+        }
+
+
+            .cta-banner {
+            background: linear-gradient(90deg, #2d3b9b, #7a47a6);
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            }
+
+            .cta-banner h3 {
+            margin-bottom: 10px;
+            }
+
+            .cta-banner p {
+            margin-bottom: 20px;
+            }
+
+           /* Tab devices (up to 991px) */
+            @media (max-width: 991px){
+                #top_banner{
+                height: 25vh;
+               }
+
+            }
+
+            /* Mobile devices (up to 767px) */
+            @media (max-width: 767px){
+
+               #top_banner{
+                height: 15vh;
+               }
+
+                  section{
+            margin-top: 26px;
+             }
+
+              .modal-dialog {
+                  max-width: 100%;
+                  margin: 0;
+              }
+              .modal-content {
+                  border-radius: 0;
+              }
+
+            }
+            
+
+    </style>
 </head>
 <body>
-    
 
+    <div class="container-fluid">
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div >
+              <a class="navbar-brand " href="#"><img src="./assets/Logo/cybercaves_logo.jpg" alt="" width="180rem"></a>   
+          </div>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end me-4" id="navbarNavDropdown">
+            <ul class="navbar-nav  d-flex gap-4">
+
+              <li class="nav-item fw-bold">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="sapbussiness.html">SAP Business One</a></li>
+                  <li><a class="dropdown-item" href="#">S/4 HANA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Customer Checkout (CCO)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Services
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="sapImplement.html">SAP Implementation</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Upgrade</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Migration</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Support Services</a></li>
+                  <li><a class="dropdown-item" href="#">SAP Customized Addon Development</a></li>
+                  <li><a class="dropdown-item" href="#">Networking & IT Services</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Industries
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="">t1</a></li>
+                  <li><a class="dropdown-item" href="#">t2</a></li>
+                  <li><a class="dropdown-item" href="#">t3</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Company
+                </a>
+                <ul class="dropdown-menu bg-info">
+                  <li><a class="dropdown-item" href="">t1</a></li>
+                  <li><a class="dropdown-item" href="#">t2</a></li>
+                  <li><a class="dropdown-item" href="#">t3</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item fw-bold">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+         <!-- Contact div start -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="requestDemoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content px-4 py-3">
+                <div class="modal-header  bg-dark">
+                    <h3 class="modal-title text-light fw-bold w-100 text-center" id="requestDemoModalLabel">Connect With Us !</h3>
+                    <button type="button" class="btn-close bg-light ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-4">We would love to respond to your queries and help you succeed.
+                                  Feel free to get in touch with us</p>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-md-0 mb-3">
+                                <label for="name" class="form-label fw-bold">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="businessEmail" class="form-label fw-bold">Business Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="businessEmail" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-md-0 mb-3">
+                                <label for="contactNumber" class="form-label fw-bold">Phone <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="contactNumber" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="companyName" class="form-label fw-bold" >Company <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="companyName" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-md-0 mb-3">
+                                <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
+                                <select id="product" class="form-select" required>
+                                    <option value="">Choose Product</option>
+                                    <option value="Product1">Product 1</option>
+                                    <option value="Product2">Product 2</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">                             
+                                <label for="license" class="form-label fw-bold">License</label>
+                                <input type="range" class="form-range" id="license" min="0" max="100" step="1">
+                                <small class="form-text text-muted">Selected Value: <span id="licenseValue">0</span></small>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12 mb-md-0 mb-3">
+                              <label for="subject" class="form-label fw-bold">Subject <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="subject" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">                          
+                            <div class="col-md-12">
+                                <label for="message" class="form-label fw-bold">Message <span class="text-danger">*</span></label>
+                                <textarea id="message" class="form-control" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                               <label class="form-check-label" for="privacyPolicy">I agree to share my information with you and understand it will be used as described in <a href="#" class="text-decoration-none">cybercaves</a> privacy policy. <span class="text-danger">*</span></label>                        
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="submit" class="btn btn-warning px-4 me-3">Submit</button>
+                          <button type="reset" class="btn btn-warning px-4 ms-3">Reset</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- Contact div end -->
+      
+        <!-- top banner image -->
+        <header id="top_banner"> 
+        </header>
+
+
+        <!-- Main body -->
+        <main>
+            <section id="section1" class="mx-0 mx-md-5">
+                <h3 class="fw-bold text-center text-md-start">SAP B1 Integration with third party applications</h3>
+                <p class="mt-3">Effortlessly gets your tailored third-party applications integrated with SAP Business 
+                  One and streamlines your business data in one place. SAP Business One is one of the best backend ERP 
+                  systems for small and medium businesses as it gives a wide range of alternatives to integrate with other 
+                  applications. You can also create a streamlined operating platform with new opportunities and capabilities
+                   that are explicitly customized for your business needs, by simply combining the SAP Business One application 
+                   with multiple third-party vendors. </p>
+            </section>
+
+              <section id="section2" class="mx-0 mx-md-5">
+                <h3 class="fw-bold text-center text-md-start">Importance of using Third-party Software with SAP Business One</h3>
+                <p class="mt-3">When a company grows, parallelly, the workforce and production also grow. It becomes a problem to 
+                  manage huge data systematically. However, companies require collecting real-time data in order to reduce the chances 
+                  of production delays and make the right decision. As companies have started implementing third-party software with SAP 
+                  B1 in different departments, it helped them to get real-time information along with offering accurate data.</p>
+            </section>
+
+            <section  class="mx-2 mx-md-5" id="section3">
+                <h3 class="fw-bold">Some of the most common third-party applications that are integrated with SAP Business One are:</h3>
+               <div class="mt-4" id="dots">
+                    <ul>
+                        <li>
+                          <h5>WMS – Warehouse Management System</h5>
+                        </li>
+                        <li>
+                          <h5>HRMS – Human Resource Management System</h5>
+                        </li>
+                         <li>
+                          <h5>POS – Point of Sales system and several other third-party applications</h5>
+                        </li>
+                    </ul>
+               </div>
+              
+            </section>
+
+        </main>
+        
+        <!-- Footer -->
+         <footer class="mb-4">
+             <div class="cta-banner py-4  text-center">
+            <h3>What Are You Waiting For?</h3>
+            <p>
+              Get the right solution for your business from our industry
+              experts!
+            </p>
+            <a  class="btn btn-warning" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Talk to Our Experts</a>
+          </div>
+         </footer>
+
+    </div>
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--  -->
