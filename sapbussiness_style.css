@@ -4,60 +4,47 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-#body_Container{
-    margin-bottom: 25vh;
+#body_Container {
+  margin-bottom: 25vh;
 }
 /* --------------------------------------------------- */
-#navbar {
-  padding: 25px 0;
-  /* background-color: #ffc107; */
-  height: 10vh;
- }
-
-#navbar a{
-  text-decoration: none;
-  color: #000;
-  transition: 0.5s;
-}
-#navbar a:hover{
-  color:gray;
+#navbar .nav-link {
+  color: black;
+  transition: color 0.3s ease;
 }
 
-#nav_ul{
+#navbar .nav-link:hover {
+  color: gray;
+}
+
+/* --------------------------------------------------- */
+#sap_img {
+  height: 45vh;
+  background-image: url(./assets/Product/SAP\ Business\ One.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: 5px;
+  padding-left: 16vw;
+  color: white;
 }
 
-/* --------------------------------------------------- */
-#sap_img{
-    height: 45vh;
-    background-image: url(./assets/Product/SAP\ Business\ One.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding-left: 16vw;
-    color: white;
+#wss {
+  padding: 0 90px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#wss{
-    padding: 0 90px;
-    justify-content: center;
-    margin-bottom: 20px;
+#wss img {
+  margin-left: 80px;
 }
 
-#wss img{
-    margin-left: 80px;
+#cards4 {
+  background-color: #686d76;
+  margin-bottom: 40px;
 }
 
-#cards4{
-background-color: #686D76;
-margin-bottom: 40px;
-}
-
-#bottom .card{
+#bottom .card {
   position: relative;
   height: 52vh;
   box-shadow: 0px 0px 7px black;
@@ -65,35 +52,35 @@ margin-bottom: 40px;
   cursor: pointer;
 }
 
-#bottom .card:hover{
+#bottom .card:hover {
   transform: translateY(-15px);
   box-shadow: 0px 0px 8px yellowgreen;
 }
 
-#bottom .card h5{
-  color: #1A2130;
+#bottom .card h5 {
+  color: #1a2130;
 }
 
-#cards4 .btn{
-position: absolute;
-bottom: 20px;
-left: 30px;
+#cards4 .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
 }
 
-#bottom .card{
-    background-color: #E3E1D9;
+#bottom .card {
+  background-color: #e3e1d9;
 }
 
-#collpasebody2{
-    margin: 20px 200px; 
+#collpasebody2 {
+  margin: 20px 200px;
 }
 
-.collpasebody{
-    margin: 20px 200px; 
+.collpasebody {
+  margin: 20px 200px;
 }
 
 /* --------------------------------------------------- */
-  /* #request_div{
+/* #request_div{
     height: 50vh;
     width: 50vw;
     position: absolute;
