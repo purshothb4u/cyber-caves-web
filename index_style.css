@@ -16,6 +16,77 @@
 
 /* --------------------------------------------------- */
 
+/* .home_image {
+  height: 88vh;
+  color: white;
+}
+#home_image1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assets/Home/Home\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#i1 {
+  position: relative;
+  width: 55vw;
+}
+#home_image1 h1 {
+  margin-right: 13%;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+#home_image1 h5 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+}
+#home_image1_button {
+  position: absolute;
+  left: 40%;
+  top: 112%;
+}
+#home_image2 {
+  padding-top: 15%;
+  padding-left: 12%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assets/Home/Home\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home_image3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assets/Home/Home\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#i3 {
+  width: 37vw;
+  margin-left: 12vw;
+}
+#i3 button {
+  margin-left: 14vw;
+}
+#home_image4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./assets/Home/Home\ 4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#i4 {
+  margin-left: -100px;
+} */
+
+
 .home_image {
   height: 88vh;
   color: white;
@@ -85,6 +156,184 @@
 #i4 {
   margin-left: -100px;
 }
+
+/* Media Queries */
+
+/* For phones */
+@media (max-width: 576px) {
+  
+
+.home_image {
+  height: 40vh;
+  color: white;
+}
+  #home_image1 h1 {
+    font-size: 1.2rem;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  #home_image1 h5 {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #home_image1_button {
+    position: static;
+    display: block;
+    margin: 1rem auto 0;
+  }
+
+  #home_image2 {
+    padding-top: 20%;
+    padding-left: 5%;
+  }
+
+  #i3 {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+
+  #i3 button {
+    margin-left: 0;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #home_image4 h1 {
+    font-size: 1.5rem;
+  }
+
+  #home_image4 h6 {
+    font-size: 1rem;
+  }
+}
+
+/* For tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+  .home_image {
+  height: 40vh;
+  color: white;
+}
+
+  #home_image1 h1 {
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 3%;
+  }
+
+  #home_image1 h5 {
+    position: static;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #home_image1_button {
+    position: static;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+
+  #home_image2 {
+    padding-top: 18%;
+    padding-left: 8%;
+  }
+
+  #i3 {
+    width: 70vw;
+    margin-left: 7vw;
+  }
+
+  #i3 button {
+    margin-left: 0;
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  #home_image4 h1 {
+    font-size: 1.75rem;
+  }
+
+  #home_image4 h6 {
+    font-size: 1.2rem;
+  }
+}
+
+/* For laptops 14 inch */
+@media (min-width: 769px) and (max-width: 1366px) {
+  #home_image1 h1 {
+    font-size: 2rem;
+  }
+
+  #home_image1 h5 {
+    font-size: 1.25rem;
+  }
+
+  #home_image1_button {
+    font-size: 1rem;
+  }
+
+  #home_image2 {
+    padding-top: 15%;
+    padding-left: 10%;
+  }
+
+  #i3 {
+    width: 50vw;
+    margin-left: 10vw;
+  }
+
+  #i3 button {
+    margin-left: 5vw;
+  }
+
+  #home_image4 h1 {
+    font-size: 2rem;
+  }
+
+  #home_image4 h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* For laptops 16 inch */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  #home_image1 h1 {
+    font-size: 2.5rem;
+  }
+
+  #home_image1 h5 {
+    font-size: 1.5rem;
+  }
+
+  #home_image1_button {
+    font-size: 1.25rem;
+  }
+
+  #home_image2 {
+    padding-top: 12%;
+    padding-left: 12%;
+  }
+
+  #i3 {
+    width: 40vw;
+    margin-left: 10vw;
+  }
+
+  #i3 button {
+    margin-left: 5vw;
+  }
+
+  #home_image4 h1 {
+    font-size: 2.5rem;
+  }
+
+  #home_image4 h6 {
+    font-size: 1.75rem;
+  }
+}
+
 
 /* --------------------------------------------------- */
 
