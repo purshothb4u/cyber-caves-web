@@ -39,15 +39,13 @@
       }
 
       .card {
-        margin: 0 16px;
         padding: 5px 10px;
         box-shadow: 0px 0px 7px black;
-        transition: 0.5s ease;
       }
 
-      .card:hover {
-        transform: translateY(-15px);
-        box-shadow: 0px 0px 8px #da7297;
+      /* Custom CSS for responsive width */
+      .responsive-width {
+        width: 75%;
       }
 
       #dots ul {
@@ -107,8 +105,13 @@
           max-width: 100%;
           margin: 0;
         }
+
         .modal-content {
           border-radius: 0;
+        }
+
+        .responsive-width {
+          width: 100%;
         }
       }
     </style>
@@ -494,17 +497,17 @@
           </p>
         </section>
 
-        <!-- 5 Tiles -->
+        <!-- 3 Tiles -->
         <section
           id="section3"
           class="d-flex justify-content-center flex-column"
           style="background-color: #aad7d9"
         >
           <div
-            class="d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-evenly mt-4 mb-5"
+            class="d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-evenly my-4"
           >
             <div
-              class="card d-flex flex-column align-items-center m-2"
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
               <img
@@ -522,7 +525,7 @@
             </div>
 
             <div
-              class="card d-flex flex-column align-items-center m-2"
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
               <img
@@ -539,7 +542,7 @@
             </div>
 
             <div
-              class="card d-flex flex-column align-items-center m-2"
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
               <img
@@ -559,17 +562,24 @@
         </section>
 
         <section id="section4">
-          <div class="d-md-flex justify-content-center align-items-center gap-5">
-            <div class="d-flex justify-content-end">
+          <div
+            class="d-md-flex justify-content-center align-items-center gap-5"
+          >
+            <div
+              class="d-flex justify-content-md-end justify-content-center mb-sm-4"
+            >
               <img
                 src="./assets/services/Mobile_App/Why_cyber_Cvaes.jpg"
-                alt="Why_cyber_Cvaes" width="80%"
+                alt="Why_cyber_Cvaes"
+                width="80%"
               />
             </div>
 
-            <div id="dots" class="">
-              <h2 class="fw-bold text-center w-50">Why Cyber Caves?</h2>
-              <ul class="w-75">
+            <div id="dots">
+              <h2 class="fw-bold text-center mt-3 mt-md-0 responsive-width-wcc text-md-start ms-md-5">Why Cyber Caves?</h2>
+              <ul
+                class="responsive-width justify-content-sm-center d-sm-flex flex-sm-column"
+              >
                 <li>
                   Technical prowess in developing mobile apps for B2B, B2C & B2E
                   business environment with great UI/UX.
@@ -597,6 +607,14 @@
               </ul>
             </div>
           </div>
+        </section>
+
+        <section class="text-center">
+          <h2>Interested? We love building great mobile apps</h2>
+          <h5>
+            Be ready to realize your winning idea into execution. We got the
+            right expertise and talent to make it happen.
+          </h5>
         </section>
       </main>
 
