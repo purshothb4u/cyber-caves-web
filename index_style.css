@@ -86,7 +86,7 @@
   background-size: cover;
   padding: 30px;
   text-align: center;
-  height: 85vh;
+  min-height: 85vh;
   margin-top: 5vh;
 }
 
@@ -257,8 +257,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("./assets/Home/Home BG.jpg");
     padding: 10px;
-    height: 100vh;
     margin-top: 2vh;
+    min-height: 75vh;
   }
 
   .grid {
