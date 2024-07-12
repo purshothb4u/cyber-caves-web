@@ -140,7 +140,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-
   margin-bottom: 20px;
 }
 
@@ -284,7 +283,9 @@
   #CyberCaves {
     flex-direction: column;
   }
-
+#box1 {
+  margin-bottom: 10px;
+}
   #box2 {
     display: none;
   }
@@ -337,6 +338,10 @@
   .h1_class {
     display: none;
   }
+
+  .why-cyber-caves .cta-banner {
+  margin-top: 10px;
+}
 
   .footer {
     padding: 10px 0;
