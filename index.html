@@ -69,15 +69,10 @@
                 </ul>
               </li>
 
-              <li class="nav-item dropdown fw-bold">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item fw-bold">
+                <a class="nav-link" href="#" role="button">
                   About Company
                 </a>
-                <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="">t1</a></li>
-                  <li><a class="dropdown-item" href="#">t2</a></li>
-                  <li><a class="dropdown-item" href="#">t3</a></li>
-                </ul>
               </li>
 
               <li class="nav-item fw-bold">
@@ -174,22 +169,22 @@
           id="carouselExampleRide"
           class="carousel slide"
           data-bs-ride="carousel"
-        >
+         >
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
               <div
-                class="home_image position-relative pb-4"
+                class="home_image pb-4"
                 id="home_image1"
               >
-                <div id="i1">
-                  <h1 class="text-center">
-                    <p>Discover a single, affordable solution</p>
-                    <p>to manage your entire business.</p>
+                <div id="i1" class="d-flex flex-column align-items-center">
+                  <h1 class="h1_class">
+                    Discover a single, affordable solution
                   </h1>
-                  <h5 class="fw-normal my-2">SAP Bussiness One</h5>
+                  <h1 class="h1_class"> to manage your entire business.</h1>
+                  <h5 class="mt-2 mb-3">SAP Bussiness One</h5>
                   <a href="contact.html"
                     ><button
-                      class="btn btn-info btn-sm rounded-5 px-3"
+                      class="btn btn-info btn-sm"
                       id="home_image1_button"
                     >
                       Contact
@@ -200,16 +195,16 @@
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <div class="home_image" id="home_image2">
-                <h6>We provide SAP Solutions to SMB and Large Enterprises</h6>
+                <div id="i3">
+                  <h6>We provide SAP Solutions to SMB and Large Enterprises</h6>
                 <h1 class="fw-bold mt-3">END-TO-END DEVELOPMENT</h1>
-                <p class="w-50 lh-lg">
+                <p class="line_height">
                   We are real people driven to create extraordinary things. We
                   approach technology with uncompromising standards and artisan's eye. We treat our client's challenge as our own,
                   never satisfied until it's solved... and then some.
                 </p>
-                <a href="contact.html"
-                  ><button class="btn btn-info btn-sm">Contact</button></a
-                >
+                <button class="btn btn-info btn-sm">Contact</button>
+                </div>        
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
@@ -217,7 +212,7 @@
                 <div id="i3">
                      <h1 class="fw-bold">FROM IDEA TO PRODUCT</h1>
                 
-                <p class="mt-3 lh-lg">
+                <p class="mt-3 line_height">
                   Guided by 15 years of hands-on strategy and execution
                   experience, we ask the right questions, anticipate obstacles
                   and create actionable plans going in. What comes out connects dots
@@ -330,7 +325,7 @@
       <!-- Find Right end -->
 
       <!-- Why Cyber Caves start-->
-      <h3 style="font-weight: bold; font-size: 2em" class="my-5 ms-5">
+      <h3 style="font-weight: bold; font-size: 2em" class="my-5 ms-0 ms-md-5 text-center text-md-start">
         Why Cyber Caves
       </h3>
 
@@ -442,49 +437,50 @@
 
       <!-- Why Cyber Caves end-->
        <!-- footer start -->
-        <footer class="footer">
-    <div class="container">
-        <div class="footer-outer d-flex justify-content-between flex-column flex-md-row">
-            <div class="footer-inner w-25">
-                <h5>ABOUT US</h5>
-                <div class="footer-logo mb-2">
-                    <img src="./assets/Logo/cybercaves_logo.jpg" alt="Cyber Caves Logo">
-                </div>
-                <p>Cyber Caves implements, integrates, and supports SAP solutions for growing business globally.</p>
-            </div>
-            <div class="footer-inner">
-                <h5>SERVICES</h5>
-                <ul>
-                    <li>SAP Business One</li>
-                    <li>S/4 HANA</li>
-                    <li>Add-on Developments</li>
-                    <li>Mobile App Developments</li>
-                    <li>SAP Customer Checkout (POS Software)</li>
-                </ul>
-            </div>
-            <div class="footer-inner">
-                <h5>LOCATIONS</h5>
-                <ul>
-                    <li>India</li>
-                    <li>United Arab Emirates</li>
-                    <li>Kingdom of Saudi Arabia</li>
-                    <li>Kuwait</li>
-                    <li>Bahrain</li>
-                    <li>USA</li>
-                </ul>
-            </div>
-            <div class="footer-inner">
-                <h5>CONTACT US</h5>
-                <p>+91-</p>
-                <p>info@cybercaves.com</p>
-            </div>
+       <footer class="footer">
+  <div class="container">
+    <div class="row footer-outer">
+      <div class="col-12 col-md-6 col-lg-3 footer-inner">
+        <h5>ABOUT US</h5>
+        <div class="footer-logo mb-2">
+          <img src="./assets/Logo/cybercaves_logo.jpg" alt="Cyber Caves Logo">
         </div>
+        <p>Cyber Caves implements, integrates, and supports SAP solutions for growing business globally.</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 footer-inner">
+        <h5>SERVICES</h5>
+        <ul>
+          <li>SAP Business One</li>
+          <li>S/4 HANA</li>
+          <li>Add-on Developments</li>
+          <li>Mobile App Developments</li>
+          <li>SAP Customer Checkout (POS Software)</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 footer-inner">
+        <h5>LOCATIONS</h5>
+        <ul>
+          <li>India</li>
+          <li>United Arab Emirates</li>
+          <li>Kingdom of Saudi Arabia</li>
+          <li>Kuwait</li>
+          <li>Bahrain</li>
+          <li>USA</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 footer-inner">
+        <h5>CONTACT US</h5>
+        <p>+91-</p>
+        <p>info@cybercaves.com</p>
+      </div>
     </div>
-<hr>
-    <div class="ms-5 mt-4">
-            <p>&copy; 2024 Cyber Caves Pvt Ltd.</p>
-        </div>
+  </div>
+  <hr>
+  <div class="text-center mt-4">
+    <p>&copy; 2024 Cyber Caves Pvt Ltd.</p>
+  </div>
 </footer>
+
          <!-- footer end -->
        
     </div>
