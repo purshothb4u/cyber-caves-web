@@ -243,7 +243,7 @@
 /* Tab devices (up to 991px) */
 @media (max-width: 991px) {
   .home_image {
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
   }
 
@@ -317,7 +317,7 @@
 /* Mobile devices (up to 767px) */
 @media (max-width: 767px) {
   .home_image {
-    height: 35vh;
+    min-height: 35vh;
     width: 100%;
   }
 
@@ -384,7 +384,7 @@
 /* Additional media query for very small screens */
 @media (max-width: 480px) {
   .home_image {
-    height: 28vh;
+    min-height: 28vh;
     width: 100%;
   }
 
