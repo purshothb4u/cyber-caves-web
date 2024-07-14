@@ -79,18 +79,21 @@
 
 /* --------------------------------------------------- */
 
- .cta-banner {
-            background: linear-gradient(90deg, #2d3b9b, #7a47a6);
-            color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-            }
+.cta-banner {
+background: linear-gradient(90deg, #2d3b9b, #7a47a6);
+color: #fff;
+padding: 20px;
+border-radius: 5px;
+margin-top: 30px;
+}
 
-            .cta-banner h3 {
-            margin-bottom: 10px;
-            }
+.cta-banner h3 {
+margin-bottom: 10px;
+}
 
-            .cta-banner p {
-            margin-bottom: 20px;
-            }
+.cta-banner p {
+margin-bottom: 20px;
+}
+
+
+
