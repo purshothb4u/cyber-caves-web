@@ -189,6 +189,8 @@
   margin-bottom: 10px;
 }
 
+/* --------------------------------------------------- */
+
 .why-cyber-caves .cta-banner {
   background: linear-gradient(90deg, #2d3b9b, #7a47a6);
   color: #fff;
@@ -239,6 +241,8 @@
   left: 0;
   font-size: 18px; /* Custom size for bullet points */
 }
+/* --------------------------------------------------- */
+
 
 /* Tab devices (up to 991px) */
 @media (max-width: 991px) {
@@ -378,6 +382,14 @@
   .footer p,
   .footer a {
     font-size: 0.9rem;
+  }
+
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+  }
+  .modal-content {
+      border-radius: 0;
   }
 }
 

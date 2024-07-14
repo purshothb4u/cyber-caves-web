@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAP Support Services</title>
+    <title>About Company</title>
     <link rel="icon" href="./assets/Logo/cyber caves_title.jpg" />
     <!-- Bootstrap Link -->
     <link
@@ -27,45 +27,56 @@
         color: gray;
       }
 
-      #top_banner {
-        height: 50vh;
-        background-image: url(./assets/services/Support_Services/SAP_SupportService_Banner.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
       section {
         margin-top: 36px;
       }
 
-      #dots ul {
-        list-style-type: none;
-        padding-left: 20px;
+      #section1 {
+        margin: 0 200px;
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
       }
 
-      #dots li {
-        position: relative;
-        padding-left: 20px; /* Adjusted padding to accommodate larger bullet points */
-        margin-bottom: 15px;
+      #section1 img {
+        width: 500px; 
       }
 
-      #dots li::before {
-        content: "\2023"; /* Custom bullet point symbol */
-        color: #007bff; /* Custom color for bullet points */
-        position: absolute;
-        left: 0;
-        font-size: 24px; /* Increased size for bullet points */
-        line-height: 1; /* Ensures bullet point aligns with text */
+      .line_height {
+        line-height: 2;
+      }
+      #section2{
+        background-color: #68D2E8;
       }
 
-      .card {
+       .smcard {
+        padding: 10px 20px;
+        box-shadow: 0px 0px 7px black;
+        width: 250px;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+         .card {
         padding: 5px 10px;
         box-shadow: 0px 0px 7px black;
+        transition: 0.5s ease;
       }
 
-      .section3_div {
-        flex: 1;
-      }
+        .card:hover{
+             transform: translateY(-15px);
+             box-shadow: 0px 0px 8px #DA7297;
+        }
+
+      .red-border {
+            border-left: 5px solid red;
+            padding-left: 10px;
+            color: #000;
+        }
 
       .cta-banner {
         background: linear-gradient(90deg, #2d3b9b, #7a47a6);
@@ -83,36 +94,40 @@
         margin-bottom: 20px;
       }
 
-      @media (max-width: 1200px) {
-        .section3_div {
-          max-width: 1140px;
-        }
-      }
-
       /* Tab devices (up to 991px) */
-      @media (max-width: 992px) {
-        #top_banner {
-          height: 25vh;
-        }
+      @media (max-width: 991px) {
 
-        .section3_div {
-          max-width: 960px;
-        }
+          #section1 {
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+    }
+    #section1 img {
+      max-width: 100%;
+    }
+
       }
 
       /* Mobile devices (up to 767px) */
-      @media (max-width: 768px) {
-        #top_banner {
-          height: 15vh;
-        }
-
-        .section3_div {
-          max-width: 720px;
-        }
-
+      @media (max-width: 767px) {
         section {
           margin-top: 26px;
         }
+
+         #section1 {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    #section1 img {
+      max-width: 100%;
+    }
+    #section1 h2 {
+      font-size: 1.5rem;
+    }
+    #section1 p {
+      font-size: 1rem;
+    }
 
         .modal-dialog {
           max-width: 100%;
@@ -120,12 +135,6 @@
         }
         .modal-content {
           border-radius: 0;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .section3_div {
-          max-width: 540px;
         }
       }
     </style>
@@ -262,21 +271,10 @@
                 </ul>
               </li>
 
-              <li class="nav-item dropdown fw-bold">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li class="nav-item fw-bold">
+                <a class="nav-link" aria-current="page" href="aboutcompany.html"
+                  >About Company</a
                 >
-                  About Company
-                </a>
-                <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="">t1</a></li>
-                  <li><a class="dropdown-item" href="#">t2</a></li>
-                  <li><a class="dropdown-item" href="#">t3</a></li>
-                </ul>
               </li>
 
               <li class="nav-item fw-bold">
@@ -456,206 +454,94 @@
       </div>
       <!-- Contact div end -->
 
-      <!-- top banner image -->
-      <header id="top_banner"></header>
-
       <!-- Main body -->
       <main>
-        <section class="mx-2 mx-md-5" id="section1">
-          <h5>
-            At Cyber Caves, we understand the critical role SAP Business One
-            plays in the success of your business. We understand that effective
-            support is essential for maximizing the potential of your SAP
-            Business One solution. Our dedicated support services are designed
-            to empower you, ensuring seamless operations and maximum efficiency.
-          </h5>
-          <div class="mt-4" id="dots">
-            <ul>
-              <li>
-                <h5>10+ Years of experience</h5>
-              </li>
-              <li>
-                <h5>Help Desk Portal Access</h5>
-              </li>
-              <li>
-                <h5>Dedicated Certified SAP Consultants</h5>
-              </li>
-              <li>
-                <h5>High Priority Response Time</h5>
-              </li>
-              <li>
-                <h5>And more…</h5>
-              </li>
-            </ul>
+        <section
+          id="section1"
+          class="d-md-flex align-items-center justify-content-center gap-4"
+        >
+          <div>
+            <img
+              src="./assets/About/About_Company_Happy.png"
+              alt="About_Company_Happy"
+            />
+          </div>
+          <div>
+            <h2 class="fw-bold">Engaged people & Happy clients</h2>
+            <p class="mt-2 line_height">
+              Cyber Caves is a company where employees come, not to work, but to
+              play the game they love the most. This practice creates an
+              environment of highly engaged, motivated & happy employees, who
+              produce services which keep customers excited and retained for
+              life.
+            </p>
           </div>
         </section>
 
-        <!-- 4 Tiles -->
-        <section
-          id="section2"
+        <section  id="section2" class="p-5">
+
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-around align-items-center mx-5 mb-0 mb-md-4">
+                <h2 class="smcard">Experience</h2>
+                <h2 class="smcard">Versatility</h2>
+                <h2 class="smcard">Transparency</h2>
+            </div>
+
+              <!-- 3 Tiles -->
+        <div
           class="d-flex justify-content-center flex-column"
-          style="background-color: #aad7d9"
         >
           <div
-            id="top"
-            class="d-flex flex-column align-items-center mt-4 mx-1 text-center text-md-start"
-            style="color: #1a2130"
-          >
-            <h3 class="fw-bold">Our SAP Business One Support Offering</h3>
-          </div>
-
-          <div
-            id="bottom"
-            class="d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-evenly mt-4 mb-5"
+            class="d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-md-evenly my-md-2"
           >
             <div
-              class="card d-flex flex-column align-items-center m-2"
-              style="width: 18rem"
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
+              style="width: 22rem"
+            >
+              <div class="card-body d-flex justify-content-center align-items-center ">
+                <h1 class="red-border mx-5">Looking Beyond The Possible</h1>
+              </div>
+            </div>
+
+            <div
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
+              style="width: 22rem"
             >
               <img
-                src="./assets/services/Support_Services/DedicatedSupport.png"
+                src="./assets/About/vision.png"
                 class="card-img-top img-fluid w-50 pt-3"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
-                  Dedicated Support SAP Consultants
-                </h5>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Vision</h5>
                 <p class="card-text">
-                  Our team consists of SAP-certified consultants. You’ll be
-                  assigned a dedicated consultant who understands the
-                  intricacies of your business.
+                 Recognition of Vestrics as one of the world's best business solutions provider by providing innovative products, value-added services, and hassle-free support.
                 </p>
               </div>
             </div>
 
             <div
-              class="card d-flex flex-column align-items-center m-2"
-              style="width: 18rem"
+              class="card d-flex flex-column align-items-center m-md-2 m-3"
+              style="width: 22rem"
             >
               <img
-                src="./assets/services/Support_Services/SystemUpdates.png"
+                src="./assets/About/target.png"
                 class="card-img-top img-fluid w-50 pt-3"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
-                  System Updates & Patch Management
-                </h5>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Mission</h5>
                 <p class="card-text">
-                  Our support services include system updates and patch
-                  management to keep your software environment secure and
-                  optimized for performance.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="card d-flex flex-column align-items-center m-2"
-              style="width: 18rem"
-            >
-              <img
-                src="./assets/services/Support_Services/Training.png"
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
-                  Training & Knowledge Transfer
-                </h5>
-                <p class="card-text">
-                  Our support services extend beyond issue resolution to include
-                  comprehensive training and knowledge transfer sessions.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="card d-flex flex-column align-items-center m-2"
-              style="width: 18rem"
-            >
-              <img
-                src="./assets/services/Support_Services/CustomizedSupport.png"
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center fw-bold">
-                  Customized Support Packages
-                </h5>
-                <p class="card-text">
-                  We offer customizable support packages to suit your
-                  requirements & and budget. Whether you need a basic or a
-                  full-scale support and maintenance plan.
+                  Understanding the client's key drivers for business success in delivering a successful project, client satisfaction, and repeat business.
                 </p>
               </div>
             </div>
           </div>
-        </section>
-      
-        <section id="section3" class="mx-0 mx-md-4">
-          <h1 class="text-center fw-bold">Benefits</h1>
-          <div
-            class="d-flex flex-column flex-lg-row justify-content-center align-items-center"
-          >
-            <div
-              class="section3_div d-flex flex-column align-items-center text-center text-lg-left px-0 px-md-4"
-            >
-              <div>
-                <h2>
-                  Proven Expertise
-                </h2>
-                <p>
-                  As a SAP Gold Partner, we bring years of experience in SAP
-                  Business One and are aware of your business challenges,
-                  allowing us to solve them quickly.
-                </p>
-              </div>
-              <div>
-                <h2>Continuous Improvement</h2>
-                <p>
-                  We stay ahead of industry trends and SAP updates to provide
-                  you with cutting-edge solutions. Our commitment to continuous
-                  improvement means you always have access to the latest SAP
-                  innovations.
-                </p>
-              </div>
-            </div>
-
-            <div class="section3_div px-0 px-md-4">
-              <img
-                src="./assets/services/Support_Services/SAP_Support_Services-Benefits.jpg"
-                alt=""
-                width="100%"
-              />
-            </div>
-
-            <div
-              class="section3_div d-flex flex-column align-items-center text-center text-lg-left px-0 px-md-4 py-lg-0 py-3"
-            >
-              <div>
-                <h2>Client-Centric Approach</h2>
-                <p>
-                  Your success is our priority. We work closely with you to
-                  understand your business goals and challenges, ensuring our
-                  support services align with your objectives.
-                </p>
-              </div>
-              <div>
-                <h2>Rapid Response</h2>
-                <p>
-                  In the fast-paced business environment, downtime isn’t an
-                  option. Our commitment to a rapid response ensures that your
-                  issues are acknowledged promptly, and our consultants work
-                  diligently to resolve them efficiently.
-                </p>
-              </div>
-            </div>
-          </div>
+        </div>
+            
         </section>
       </main>
 
-          <!-- Footer -->
+      <!-- Footer -->
       <footer class="mb-4 text-center">
         <div class="cta-banner py-4 d-lg-flex justify-content-around align-items-center">
             <div>

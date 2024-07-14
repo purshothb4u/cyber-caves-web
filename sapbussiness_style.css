@@ -4,9 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-#body_Container {
+/* #body_Container {
   margin-bottom: 25vh;
-}
+} */
 /* --------------------------------------------------- */
 #navbar .nav-link {
   color: black;
@@ -80,12 +80,19 @@
 }
 
 /* --------------------------------------------------- */
-/* #request_div{
-    height: 50vh;
-    width: 50vw;
-    position: absolute;
-    top: 0%;
-    left: 25%;
-    display: none;
-    background-color: aquamarine;
-  } */
+
+ .cta-banner {
+            background: linear-gradient(90deg, #2d3b9b, #7a47a6);
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            }
+
+            .cta-banner h3 {
+            margin-bottom: 10px;
+            }
+
+            .cta-banner p {
+            margin-bottom: 20px;
+            }
