@@ -31,7 +31,7 @@
 #wss {
   padding: 0 90px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #wss img {
@@ -145,7 +145,7 @@ footer .cta-banner p {
   #wss img {
     margin-left: 130px;
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   #wss-buttons .btn {
@@ -218,12 +218,23 @@ footer .cta-banner p {
     padding: 0 10px;
   }
   #wss img {
-    margin-left: 50px;
+    margin-left: 53px;
     width: 75%;
   }
 
   #wss-buttons .btn {
     width: 70%;
     margin-bottom: 10px;
+  }
+}
+
+/* Styles for Small Mobile Devices (up to 360px) */
+@media (max-width: 360px) {
+  #sap_img {
+    height: 42vh;
+    padding: 20px;
+  }
+  #sap h1 {
+    text-align: center;
   }
 }
