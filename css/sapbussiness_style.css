@@ -18,7 +18,7 @@
 /* --------------------------------------------------- */
 #sap_img {
   height: 45vh;
-  background-image: url(../assets/Product/SAP\ Business\ One.jpg);
+  background-image: url(../assets/Product/SAP_Business_One.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -97,15 +97,29 @@ margin-bottom: 20px;
 
 /* --------------------------------------------------- */
 
+/* Tab devices (up to 991px) */
+@media (max-width: 991px) {
+
+
+
+}
+
 /* Mobile devices (up to 767px) */
-  @media (max-width: 767px){
+@media (max-width: 767px){
 
-    #contactModal .modal-dialog {
-        max-width: 100%;
-        margin: 0;
-    }
-    #contactModal .modal-content {
-        border-radius: 0;
-    }
-
+  #contactModal .modal-dialog {
+      max-width: 100%;
+      margin: 0;
   }
+  #contactModal .modal-content {
+      border-radius: 0;
+  }
+
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+
+
+
+}
