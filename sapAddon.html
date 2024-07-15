@@ -32,6 +32,18 @@
         background-image: url(./assets/services/Addon_Development/Addon_Development.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .banner-text {
+        color: white;
+        font-size: 2.2vw;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.75em;
+        border-radius: 3px;
+        margin-left: 2em;
       }
 
       section {
@@ -64,6 +76,9 @@
         #top_banner {
           height: 25vh;
         }
+        .banner-text {
+          font-size: 3vw;
+        }
       }
 
       /* Mobile devices (up to 767px) */
@@ -89,52 +104,121 @@
   <body>
     <div class="container-fluid">
       <!-- nav start -->
-       <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
         <div class="container-fluid">
-          <div >
-              <a class="navbar-brand " href="index.html"><img src="./assets/Logo/cybercaves_logo.jpg" alt="" width="180rem"></a>   
+          <div>
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="./assets/Logo/cybercaves_logo.jpg"
+                alt=""
+                width="180rem"
+            /></a>
           </div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-lg-flex justify-content-end me-4" id="navbarNavDropdown">
-            <ul class="navbar-nav  d-flex gap-4">
-
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-end me-4"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav d-flex gap-4">
               <li class="nav-item fw-bold">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
-    
+
               <li class="nav-item dropdown fw-bold">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Products
                 </a>
                 <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="sapbussiness.html">SAP Business One</a></li>
+                  <li>
+                    <a class="dropdown-item" href="sapbussiness.html"
+                      >SAP Business One</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">S/4 HANA</a></li>
-                  <li><a class="dropdown-item" href="#">SAP Customer Checkout (CCO)</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >SAP Customer Checkout (CCO)</a
+                    >
+                  </li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown fw-bold">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Services
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
                 </a>
                 <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="sapImplement.html">SAP Implementation</a></li>
-                  <li><a class="dropdown-item" href="sapUpgrade.html">SAP Upgrade</a></li>
-                  <li><a class="dropdown-item" href="sapMigration.html">SAP Migration</a></li>
-                  <li><a class="dropdown-item" href="sapSupport.html">SAP Support Services</a></li>
-                  <li><a class="dropdown-item" href="sapAddon.html">SAP Addon Development</a></li>
-                  <li><a class="dropdown-item" href="sapIntegration.html">SAP Integration with third party applications</a></li>
-                  <li><a class="dropdown-item" href="mobileApp.html">Mobile App Development</a></li>
-                  <li><a class="dropdown-item" href="Networking.html">Networking & IT Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="sapImplement.html"
+                      >SAP Implementation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sapUpgrade.html"
+                      >SAP Upgrade</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sapMigration.html"
+                      >SAP Migration</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sapSupport.html"
+                      >SAP Support Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sapAddon.html"
+                      >SAP Addon Development</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sapIntegration.html"
+                      >SAP Integration with third party applications</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="mobileApp.html"
+                      >Mobile App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Networking.html"
+                      >Networking & IT Services</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-               <li class="nav-item fw-bold">
+              <li class="nav-item fw-bold">
                 <a class="nav-link" href="industries.html" role="button">
-                   Industries
+                  Industries
                 </a>
               </li>
 
@@ -145,102 +229,186 @@
               </li>
 
               <li class="nav-item fw-bold">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >Contact</a
+                >
               </li>
-
             </ul>
           </div>
         </div>
-      </nav>  
+      </nav>
       <!-- nav end -->
 
-    <!-- Contact div start -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="requestDemoModalLabel" aria-hidden="true">
+      <!-- Contact div start -->
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="requestDemoModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-lg">
-            <div class="modal-content px-4 py-3">
-                <div class="modal-header  bg-dark">
-                    <h3 class="modal-title text-light fw-bold w-100 text-center" id="requestDemoModalLabel">Connect With Us !</h3>
-                    <button type="button" class="btn-close bg-light ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p class="mb-4">We would love to respond to your queries and help you succeed.
-                                  Feel free to get in touch with us</p>
-                    <form>
-                        <div class="row mb-3">
-                            <div class="col-md-6 mb-md-0 mb-3">
-                                <label for="name" class="form-label fw-bold">Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="businessEmail" class="form-label fw-bold">Business Email <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="businessEmail" required>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6 mb-md-0 mb-3">
-                                <label for="contactNumber" class="form-label fw-bold">Phone <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control" id="contactNumber" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="companyName" class="form-label fw-bold" >Company <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="companyName" required>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6 mb-md-0 mb-3">
-                                <label for="product" class="form-label fw-bold">Product <span class="text-danger">*</span></label>
-                                <select id="product" class="form-select" required>
-                                    <option value="">Choose Product</option>
-                                    <option value="Product1">Product 1</option>
-                                    <option value="Product2">Product 2</option>
-                                    <option value="Product2">Product 3</option>
-                                </select>
-                            </div>
-                             <div class="col-md-6">
-                                <label for="country" class="form-label fw-bold">Choose Country <span class="text-danger">*</span></label>
-                                <select id="country" class="form-select" required>
-                                    <option value="India">India</option>
-                                    <option value="UAE">United Arab Emirates</option>
-                                    <option value="Saudi Arabia">Saudi Arabia</option>
-                                    <option value="Kuwait">Kuwait</option>
-                                    <option value="Bahrain">Bahrain</option>
-                                    <option value="Oman">Oman</option>
-                                    <option value="United States">United States</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-12">
-                              <label for="subject" class="form-label fw-bold">Subject <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="subject" required>
-                            </div>
-                        </div>
-                        
-                        <div class="row mb-3">                          
-                            <div class="col-md-12">
-                                <label for="message" class="form-label fw-bold">Message <span class="text-danger">*</span></label>
-                                <textarea id="message" class="form-control" rows="3" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
-                               <label class="form-check-label" for="privacyPolicy">I agree to share my information with you and understand it will be used as described in <a href="#" class="text-decoration-none">cybercaves</a> privacy policy. <span class="text-danger">*</span></label>                        
-                        </div>
-                        <div class="d-flex justify-content-center">
-                          <button type="submit" class="btn btn-warning px-4 me-3">Submit</button>
-                          <button type="reset" class="btn btn-warning px-4 ms-3">Reset</button>
-                        </div>
-                        
-                    </form>
-                </div>
+          <div class="modal-content px-4 py-3">
+            <div class="modal-header bg-dark">
+              <h3
+                class="modal-title text-light fw-bold w-100 text-center"
+                id="requestDemoModalLabel"
+              >
+                Connect With Us !
+              </h3>
+              <button
+                type="button"
+                class="btn-close bg-light ms-5"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="modal-body">
+              <p class="mb-4">
+                We would love to respond to your queries and help you succeed.
+                Feel free to get in touch with us
+              </p>
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6 mb-md-0 mb-3">
+                    <label for="name" class="form-label fw-bold"
+                      >Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="businessEmail" class="form-label fw-bold"
+                      >Business Email <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="businessEmail"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6 mb-md-0 mb-3">
+                    <label for="contactNumber" class="form-label fw-bold"
+                      >Phone <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="contactNumber"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="companyName" class="form-label fw-bold"
+                      >Company <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="companyName"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6 mb-md-0 mb-3">
+                    <label for="product" class="form-label fw-bold"
+                      >Product <span class="text-danger">*</span></label
+                    >
+                    <select id="product" class="form-select" required>
+                      <option value="">Choose Product</option>
+                      <option value="Product1">Product 1</option>
+                      <option value="Product2">Product 2</option>
+                      <option value="Product2">Product 3</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="country" class="form-label fw-bold"
+                      >Choose Country <span class="text-danger">*</span></label
+                    >
+                    <select id="country" class="form-select" required>
+                      <option value="India">India</option>
+                      <option value="UAE">United Arab Emirates</option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Kuwait">Kuwait</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Oman">Oman</option>
+                      <option value="United States">United States</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-12">
+                    <label for="subject" class="form-label fw-bold"
+                      >Subject <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-12">
+                    <label for="message" class="form-label fw-bold"
+                      >Message <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="privacyPolicy"
+                    required
+                  />
+                  <label class="form-check-label" for="privacyPolicy"
+                    >I agree to share my information with you and understand it
+                    will be used as described in
+                    <a href="#" class="text-decoration-none">cybercaves</a>
+                    privacy policy. <span class="text-danger">*</span></label
+                  >
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-warning px-4 me-3">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-warning px-4 ms-3">
+                    Reset
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    </div>
-           <!-- Contact div end -->
+      </div>
+      <!-- Contact div end -->
 
       <!-- top banner image -->
-      <header id="top_banner"></header>
+      <header id="top_banner">
+        <div class="banner-text">SAP Addons Development</div>
+      </header>
 
       <!-- Main body -->
       <main>
@@ -282,16 +450,10 @@
               class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
-              <img
-                src=""
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
+              <!-- <img src="" class="card-img-top img-fluid w-50 pt-3" alt="..." /> -->
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">CC PDC-Pay</h5>
-                <p class="card-text">
-                  
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
 
@@ -299,34 +461,21 @@
               class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
-              <img
-                src=""
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
+              <!-- <img src="" class="card-img-top img-fluid w-50 pt-3" alt="..." /> -->
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">CC Payroll-Eye</h5>
-                <p class="card-text">
-              
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
 
-            
             <div
               class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
-              <img
-                src=""
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
+              <!-- <img src="" class="card-img-top img-fluid w-50 pt-3" alt="..." /> -->
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">CC ProjoM</h5>
-                <p class="card-text">
-              
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
 
@@ -334,16 +483,10 @@
               class="card d-flex flex-column align-items-center m-md-2 m-3"
               style="width: 22rem"
             >
-              <img
-                src=""
-                class="card-img-top img-fluid w-50 pt-3"
-                alt="..."
-              />
+              <!-- <img src="" class="card-img-top img-fluid w-50 pt-3" alt="..." /> -->
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">CC Item SRN</h5>
-                <p class="card-text">
-                
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
