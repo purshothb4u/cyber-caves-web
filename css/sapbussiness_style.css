@@ -76,12 +76,16 @@
   color: #1a2130;
 }
 
-#collpasebody2 {
-  margin: 20px 200px;
+.collpasebody {
+  margin: 20px 220px;
 }
 
-.collpasebody {
-  margin: 20px 200px;
+.collpasebody p {
+  width: 50%;
+}
+
+#cards8_tiles .card-body {
+  padding: 2rem;
 }
 
 /* --------------------------------------------------- */
@@ -124,6 +128,14 @@ footer .cta-banner p {
     width: 60%;
     margin-bottom: 10px;
   }
+
+  .collpasebody {
+    margin: 20px 130px;
+  }
+
+  #cards8_tiles .card-body {
+    padding: 1.5rem;
+  }
 }
 
 /* Tab devices (up to 991px) */
@@ -154,11 +166,31 @@ footer .cta-banner p {
 
   #cards4,
   #cards8 {
-    padding: 0 120px;
+    padding: 0 60px;
   }
 
   .card:hover {
     transform: none;
+  }
+
+  .collpasebody p {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  #card2_tile1,
+  #card4_tile1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #card2_tile2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #cards8_tiles .card-body {
+    padding: 1rem;
   }
 }
 
@@ -195,6 +227,31 @@ footer .cta-banner p {
   #cards8 {
     padding: 0;
   }
+
+  .collpasebody {
+    margin: 20px 50px;
+  }
+
+  .collpasebody p {
+    width: 100%;
+  }
+
+  #cards8_tiles .card-body {
+    padding: 0.5rem;
+  }
+  #cards8_tiles .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  #cards8_tiles h1 {
+    font-size: 1.5rem;
+  }
+  #cards8_tiles h5 {
+    font-size: 1rem;
+  }
+  #cards8_tiles p {
+    font-size: 0.875rem;
+  }
 }
 
 /* Additional media query for very small screens */
@@ -226,6 +283,36 @@ footer .cta-banner p {
     width: 70%;
     margin-bottom: 10px;
   }
+
+  .collpasebody {
+    margin: 20px 20px;
+  }
+
+  .collpasebody p {
+    width: 100%;
+  }
+
+  .collpasebody iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  #cards8_tiles .card-body {
+    padding: 0.25rem;
+  }
+  #cards8_tiles .px-5 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  #cards8_tiles h1 {
+    font-size: 1.25rem;
+  }
+  #cards8_tiles h5 {
+    font-size: 0.875rem;
+  }
+  #cards8_tiles p {
+    font-size: 0.75rem;
+  }
 }
 
 /* Styles for Small Mobile Devices (up to 360px) */
@@ -236,5 +323,39 @@ footer .cta-banner p {
   }
   #sap h1 {
     text-align: center;
+  }
+
+  .collpasebody {
+    margin: 10px 10px;
+  }
+
+  .collpasebody p {
+    width: 100%;
+  }
+
+  .collpasebody iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .collpasebody h1 {
+    font-size: 1.2rem;
+  }
+
+  #cards8_tiles .card-body {
+    padding: 0.1rem;
+  }
+  #cards8_tiles .px-5 {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+  #cards8_tiles h1 {
+    font-size: 1rem;
+  }
+  #cards8_tiles h5 {
+    font-size: 0.75rem;
+  }
+  #cards8_tiles p {
+    font-size: 0.625rem;
   }
 }
