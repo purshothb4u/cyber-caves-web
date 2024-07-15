@@ -27,6 +27,7 @@
   color: white;
 }
 
+/* --------------------------------------------------- */
 #wss {
   padding: 0 90px;
   justify-content: center;
@@ -35,8 +36,14 @@
 
 #wss img {
   margin-left: 80px;
+  width: 80%;
 }
 
+  #wss-buttons .btn {
+      width: 35%;
+  }
+
+/* --------------------------------------------------- */
 #cards4 {
   background-color: #686d76;
   margin-bottom: 40px;
@@ -97,11 +104,61 @@ margin-bottom: 20px;
 
 /* --------------------------------------------------- */
 
+/* For big screen tablets (up to 1199px wide) */
+@media (max-width: 1199px) {
+  
+  #sap_img {
+    height: 40vh;
+    padding-left: 10vw;
+}
+#sap_img .d-flex.justify-content-evenly.w-75 {
+    width: 85%;
+}
+
+#wss {
+    padding: 0 70px;
+}
+#wss img {
+    margin-left: 60px;
+}
+ #wss-buttons .btn {
+      width: 60%;
+      margin-bottom: 10px;
+  }
+
+}
+
 /* Tab devices (up to 991px) */
 @media (max-width: 991px) {
 
+#sap_img {
+    height: 35vh;
+    padding-left: 8vw;
+}
 
+#sap_img .d-flex.justify-content-evenly.w-75 .btn {
+    margin-bottom: 10px;
+}
 
+#wss {
+    padding: 0 50px;
+    flex-direction: column;
+    align-items: center;
+}
+#wss img {
+    margin-left: 130px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#wss-buttons .btn {
+    width: 35%;
+    
+}
+
+  #bottom .card:hover{
+          transform: none;
+          }
 }
 
 /* Mobile devices (up to 767px) */
@@ -115,11 +172,56 @@ margin-bottom: 20px;
       border-radius: 0;
   }
 
+  #sap_img {
+    height: 30vh;
+    padding-left: 5vw;
+}
+#sap_img .d-flex.justify-content-evenly.w-75 {
+    width: 95%;
+}
+
+#wss {
+      padding: 0 30px;
+  }
+  #wss img {
+    margin-left: 90px;
+     width: 65%;
+}
+  #wss-buttons .btn {
+      width: 40%;
+  }
+
 }
 
 /* Additional media query for very small screens */
 @media (max-width: 480px) {
 
+#sap_img {
+    height: 30vh;
+    padding: 20px;
+}
+#sap_img .d-flex.justify-content-evenly.w-75 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 5vw;
+}
+#sap_img p{
+ text-align: center;
+ padding: 0 20px;
+}
 
+#wss {
+    padding: 0 10px;
+}
+#wss img {
+    margin-left: 50px;
+     width: 75%;
+}
+
+#wss-buttons .btn {
+    width: 70%;
+    margin-bottom: 10px;
+}
 
 }
