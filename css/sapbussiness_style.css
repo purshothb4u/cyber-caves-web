@@ -39,41 +39,41 @@
   width: 80%;
 }
 
-  #wss-buttons .btn {
-      width: 35%;
-  }
+#wss-buttons .btn {
+  width: 35%;
+}
 
 /* --------------------------------------------------- */
 #cards4 {
   background-color: #686d76;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-#bottom .card {
+#cards8 {
+  background-color: #686d76;
+  margin-bottom: 30px;
+}
+
+.card {
   position: relative;
-  height: 52vh;
   box-shadow: 0px 0px 7px black;
   transition: 0.5s ease;
   cursor: pointer;
+  background-color: #e3e1d9;
 }
 
-#bottom .card:hover {
+.card .btn {
+  position: absolute;
+  bottom: 15px;
+}
+
+.card:hover {
   transform: translateY(-15px);
   box-shadow: 0px 0px 8px yellowgreen;
 }
 
-#bottom .card h5 {
+.card h5 {
   color: #1a2130;
-}
-
-#cards4 .btn {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-}
-
-#bottom .card {
-  background-color: #e3e1d9;
 }
 
 #collpasebody2 {
@@ -87,141 +87,143 @@
 /* --------------------------------------------------- */
 
 footer .cta-banner {
-background: linear-gradient(90deg, #2d3b9b, #7a47a6);
-color: #fff;
-padding: 20px;
-border-radius: 5px;
-margin-top: 30px;
+  background: linear-gradient(90deg, #2d3b9b, #7a47a6);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 footer .cta-banner h3 {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer .cta-banner p {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* --------------------------------------------------- */
 
 /* For big screen tablets (up to 1199px wide) */
 @media (max-width: 1199px) {
-  
   #sap_img {
     height: 40vh;
     padding-left: 10vw;
-}
-#sap_img .d-flex.justify-content-evenly.w-75 {
+  }
+  #sap_img .d-flex.justify-content-evenly.w-75 {
     width: 85%;
-}
-
-#wss {
-    padding: 0 70px;
-}
-#wss img {
-    margin-left: 60px;
-}
- #wss-buttons .btn {
-      width: 60%;
-      margin-bottom: 10px;
   }
 
+  #wss {
+    padding: 0 70px;
+  }
+  #wss img {
+    margin-left: 60px;
+  }
+  #wss-buttons .btn {
+    width: 60%;
+    margin-bottom: 10px;
+  }
 }
 
 /* Tab devices (up to 991px) */
 @media (max-width: 991px) {
-
-#sap_img {
+  #sap_img {
     height: 35vh;
     padding-left: 8vw;
-}
+  }
 
-#sap_img .d-flex.justify-content-evenly.w-75 .btn {
+  #sap_img .d-flex.justify-content-evenly.w-75 .btn {
     margin-bottom: 10px;
-}
+  }
 
-#wss {
+  #wss {
     padding: 0 50px;
     flex-direction: column;
     align-items: center;
-}
-#wss img {
+  }
+  #wss img {
     margin-left: 130px;
     width: 60%;
     margin-bottom: 20px;
-}
+  }
 
-#wss-buttons .btn {
+  #wss-buttons .btn {
     width: 35%;
-    
-}
+  }
 
-  #bottom .card:hover{
-          transform: none;
-          }
+  #cards4,
+  #cards8 {
+    padding: 0 120px;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }
 
 /* Mobile devices (up to 767px) */
-@media (max-width: 767px){
-
+@media (max-width: 767px) {
   #contactModal .modal-dialog {
-      max-width: 100%;
-      margin: 0;
+    max-width: 100%;
+    margin: 0;
   }
   #contactModal .modal-content {
-      border-radius: 0;
+    border-radius: 0;
   }
 
   #sap_img {
     height: 30vh;
     padding-left: 5vw;
-}
-#sap_img .d-flex.justify-content-evenly.w-75 {
+  }
+  #sap_img .d-flex.justify-content-evenly.w-75 {
     width: 95%;
-}
+  }
 
-#wss {
-      padding: 0 30px;
+  #wss {
+    padding: 0 30px;
   }
   #wss img {
     margin-left: 90px;
-     width: 65%;
-}
+    width: 65%;
+  }
   #wss-buttons .btn {
-      width: 40%;
+    width: 40%;
   }
 
+  #cards4,
+  #cards8 {
+    padding: 0;
+  }
 }
 
 /* Additional media query for very small screens */
 @media (max-width: 480px) {
-
-#sap_img {
+  #sap_img {
     height: 30vh;
     padding: 20px;
-}
-#sap_img .d-flex.justify-content-evenly.w-75 {
+  }
+  #sap_img .d-flex.justify-content-evenly.w-75 {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0 5vw;
-}
-#sap_img p{
- text-align: center;
- padding: 0 20px;
-}
+  }
+  #sap_img p {
+    text-align: center;
+    padding: 0 20px;
+  }
 
-#wss {
+  #wss {
     padding: 0 10px;
-}
-#wss img {
+  }
+  #wss img {
     margin-left: 50px;
-     width: 75%;
-}
+    width: 75%;
+  }
 
-#wss-buttons .btn {
+  #wss-buttons .btn {
     width: 70%;
     margin-bottom: 10px;
-}
-
+  }
 }
